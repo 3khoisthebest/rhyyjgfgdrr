@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Flame Network - Games</title>
+  <link rel="stylesheet" type="text/css" href="game/style.css">
+  <script src="uv/uv.bundle.js" defer></script>
+  <meta charset="UTF-8">
+  <script src="uv/uv.config.js" defer></script>
+  <script src="index.js" defer></script>
+  <script src="uv/uv.bundle.js" defer></script>
+  <script src="uv/uv.config.js" defer></script>
+  <script src="uv/uv.handler.js" defer></script>
+  <script src="uv/uv.sw.js" defer></script>
+  <script src="index.js" defer></script> 
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+  <link rel="manifest" href="favicon/site.webmanifest">
+</head>
+<body>
+    <header class="header">
+        <h1>Games FlameNetwork</h1>
+    </header>
+    <nav class="navbar">
+        <ul class="navbar-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about">About</a></li>
+          <li><a href="apps.html">Apps</a></li>
+          <li><a href="setting">Settings</a></li>
+          <li><a href="#">Games</a></li>
+          <li><a href="inprogress.html">Contact</a></li>
+        </ul>
+      </nav>
+
+  <div class="container">
+    <center><input type="text" id="search-input" placeholder="Search for a game" class="search-input"></center>
+
+    <div id="game-list">
+      <div class="game" onclick="openGame('../gamefiles/game/1/')">
+        <img src="game/logos/1.png"  class="game-logo">
+        <h3 class="game-name">1</h3>
+      </div>
+      <div class="game" onclick="openGame('../gamefiles/game/10-minutes-till-dawn/')">
+        <img src="game/logos/10minutestilldawn.png"  class="game-logo">
+        <h3 class="game-name">10 Minutes till dawn</h3>
+      </div>
+      <div class="game" onclick="openGame('../gamefiles/game/100ng/')">
+        <img src="game/logos/100playerpong.jpg"  class="game-logo">
+        <h3 class="game-name">100 Player Pong</h3>
+      </div>
+      <div class="game" onclick="openGame('../gamefiles/game/1v1lol/')">
+        <img src="game/logos/1v1.lol.png"  class="game-logo">
+        <h3 class="game-name">1v1.lol</h3>
+      </div>
+      <div class="game" onclick="openGame('../gamefiles/game/1v1space/')">
+        <img src="game/logos/1v1space.png"  class="game-logo">
+        <h3 class="game-name">1v1.space</h3>
+      </div>
+      <div class="game" onclick="openGame('../gamefiles/game/2048/')">
+        <img src="game/logos/2048Icon.png"  class="game-logo">
+        <h3 class="game-name">2048</h3>
+      </div>
+      <div class="game" onclick="openGame('../gamefiles/game/2048-multitask/')">
+        <img src="game/logos/2048mutli.png"  class="game-logo">
+        <h3 class="game-name">2048 Multitask</h3>
+      </div>
+      <div class="game" onclick="openGame('../gamefiles/game/9007199254740992/')">
+        <img src="game/logos/9007199254740992.png"  class="game-logo">
+        <h3 class="game-name">9007199254740992</h3>
+      </div>
+      <div class="game" onclick="openGame('../gamefiles/game/99balls/')">
+        <img src="game/logos/99balls.jpg"  class="game-logo">
+        <h3 class="game-name">99balls</h3>
+      </div>
+      <div class="game" onclick="openGame('../gamefiles/game/a-dance-of-fire-and-ice/')">
+        <img src="game/logos/adanceoffireandice.png"  class="game-logo">
+        <h3 class="game-name">A Dance of Fire and Ice</h3>
+      </div>
+      <div class="game" onclick="openGame('../gamefiles/game/adarkroom/')">
+        <img src="game/logos/adarkroom.png"  class="game-logo">
+        <h3 class="game-name">A Dark Room</h3>
+      </div>
+      <div class="game" onclick="openGame('../gamefiles/game/achievementunlocked/')">
+        <img src="game/logos/achivementunlocked.png"  class="game-logo">
+        <h3 class="game-name">Achievement Unlocked</h3>
+      </div>
+      <div class="game" onclick="openGame('../gamefiles/game/adrenalinechallenge/')">
+        <img src="game/logos/adrenalinechallenge.jpg"  class="game-logo">
+        <h3 class="game-name">Adrenaline Challenge</h3>
+      </div>
+      <div class="game" onclick="openGame('../gamefiles/game/adventure-drivers/')">
+        <img src="game/logos/adventuredrivers.png"  class="game-logo">
+        <h3 class="game-name">Adventure Drivers</h3>
+      </div>
+      <div class="game" onclick="openGame('../gamefiles/game/ages-of-conflict/')">
+        <img src="game/logos/ageofconflict.jpg"  class="game-logo">
+        <h3 class="game-name">Age of Conflict</h3>
+      </div>
+      <div class="game" onclick="openGame('../gamefiles/game/alienhominid/')">
+        <img src="game/logos/alienhominid.jpg"  class="game-logo">
+        <h3 class="game-name">Alien Hominind</h3>
+      </div>
+      <div class="game" onclick="openGame('../gamefiles/game/amazing-rope-police/')">
+        <img src="game/logos/alienhominid.jpg"  class="game-logo">
+        <h3 class="game-name">Amazing Rope Police</h3>
+      </div>
+      <div class="game" onclick="openGame('../gamefiles/game/amidst-the-clouds/')">
+        <img src="game/logos/admisttheclouds.png"  class="game-logo">
+        <h3 class="game-name">Admist The Clouds</h3>
+      </div>
+      <div class="game" onclick="openGame('../gamefiles/game/among-us/')">
+        <img src="game/logos/amongus.png"  class="game-logo">
+        <h3 class="game-name">Among Us</h3>
+      </div>
+      <div class="game" onclick="openGame('../gamefiles/game/angry-sharks/')">
+        <img src="game/logos/angrysharks.png"  class="game-logo">
+        <h3 class="game-name">Angry Sharks</h3>
+      </div>
+      <div class="game" onclick="openGame('../gamefiles/game/aquapark-slides/')">
+        <img src="game/logos/aquaparkslides.png"  class="game-logo">
+        <h3 class="game-name">Aquapark Slides</h3>
+      </div>
+      <div class="game" onclick="openGame('../gamefiles/game/astray/')">
+        <img src="game/logos/astray.png"  class="game-logo">
+        <h3 class="game-name">Astray</h3>
+      </div>
+      <div class="game" onclick="openGame('../gamefiles/game/avalanche/')">
+        <img src="game/logos/avalanche.png"  class="game-logo">
+        <h3 class="game-name">Avalanche</h3>
+      </div>
+      <div class="game" onclick="openGame('../gamefiles/game/awesometanks2/')">
+        <img src="game/logos/awesometanks2.jpg"  class="game-logo">
+        <h3 class="game-name">Awesome Tanks 2</h3>
+      </div>
+      <div class="game" onclick="openGame('../gamefiles/game/backrooms/')">
+        <img src="game/logos/backrooms.jpg"  class="game-logo">
+        <h3 class="game-name">Backrooms</h3>
+      </div>
+      <div class="game" onclick="openGame('../gamefiles/game/bacon-may-die/')">
+        <img src="game/logos/baconmaydie.png"  class="game-logo">
+        <h3 class="game-name">Bacon May Die</h3>
+      </div>
+      <div class="game" onclick="openGame('../gamefiles/game/bad-ice-cream/')">
+        <img src="game/logos/badicecream.png"  class="game-logo">
+        <h3 class="game-name">Bad Ice Cream</h3>
+      </div>
+      <div class="game" onclick="openGame('../gamefiles/game/bad-ice-cream-2/')">
+        <img src="game/logos/badicecream2.png"  class="game-logo">
+        <h3 class="game-name">Bad Ice Cream 2</h3>
+      </div>
+      <div class="game" onclick="openGame('../gamefiles/game/bad-ice-cream-3/')">
+        <img src="game/logos/badicecream3.png"  class="game-logo">
+        <h3 class="game-name">Bad Ice Cream 3</h3>
+      </div>
+      <div class="game" onclick="openGame('../gamefiles/game/bad-ice-cream-3/')">
+        <img src="game/logos/baldi's basics.png"  class="game-logo">
+        <h3 class="game-name">Baldis Basics</h3>
+      </div>
+      <div class="game" onclick="openGame('../gamefiles/game/ballistic-chickens/')">
+        <img src="game/logos/ballistic chickens.png"  class="game-logo">
+        <h3 class="game-name">Ballistic Chickens</h3>
+      </div>
+      <div class="game" onclick="openGame('../gamefiles/game/basket-random/')">
+        <img src="game/logos/basketrandom.jpeg"  class="game-logo">
+        <h3 class="game-name">Basket Random</h3>
+      </div>
+      <div class="game" onclick="openGame('../gamefiles/game/basketball-stars/')">
+        <img src="game/logos/basketball-stars.png"  class="game-logo">
+        <h3 class="game-name">Basketball Stars</h3>
+      </div>
+      <div class="game" onclick="openGame('../gamefiles/game/basketbros-io/')">
+        <img src="game/logos/basketbros.jpg"  class="game-logo">
+        <h3 class="game-name">Basketbros.io</h3>
+      </div>
+      <div class="game" onclick="openGame('../gamefiles/game/battleforgondor/')">
+        <img src="game/logos/battleforgrondor.jfif"  class="game-logo">
+        <h3 class="game-name">Battles for Gondor</h3>
+      </div>
+      <div class="game" onclick="openGame('../gamefiles/game/bntts/')">
+        <img src="game/logos/bigneontowershiny.png"  class="game-logo">
+        <h3 class="game-name">Big NEON Tower Tiny Square</h3>
+      </div>
+      <div class="game" onclick="openGame('../gamefiles/game/bigredbutton/')">
+        <img src="game/logos/bigredbutton.png"  class="game-logo">
+        <h3 class="game-name">Big Red Button</h3>
+      </div>
+      <div class="game" onclick="openGame('../gamefiles/game/btts/')">
+        <img src="game/logos/bigtowertinysquare.png"  class="game-logo">
+        <h3 class="game-name">Big Tower Tiny Square</h3>
+      </div>
+      <div class="game" onclick="openGame('../gamefiles/game/bitlife/')">
+        <img src="game/logos/bitlife.png"  class="game-logo">
+        <h3 class="game-name">Bitlife</h3>
+      </div>
+      <div class="game" onclick="openGame('../gamefiles/game/blacholesquare/')">
+        <img src="game/logos/blackholesquare.png"  class="game-logo">
+        <h3 class="game-name">Black Hole Square</h3>
+      </div>
+      <div class="game" onclick="openGame('../gamefiles/game/blackknight/')">
+        <img src="game/logos/blackknight.png"  class="game-logo">
+        <h3 class="game-name">Black Knight</h3>
+      </div>
+      <div class="game" onclick="openGame('../gamefiles/game/bloonstd/')">
+        <img src="game/logos/bloonstd.jpg"  class="game-logo">
+        <h3 class="game-name">Bloons TD</h3>
+      </div>
+      <div class="game" onclick="openGame('../gamefiles/game/bloonstd2/')">
+        <img src="game/logos/bloonstd2.png"  class="game-logo">
+        <h3 class="game-name">Bloons TD 2</h3>
+      </div>
+      <div class="game" onclick="openGame('../gamefiles/game/btd5/')">
+        <img src="game/logos/bloonstd5.png"  class="game-logo">
+        <h3 class="game-name">Bloons TD 5</h3>
+      </div>
+      <div class="game" onclick="openGame('../gamefiles/game/bloxors/')">
+        <img src="game/logos/bloxors.png"  class="game-logo">
+        <h3 class="game-name">Bloxors</h3>
+      </div>
+      <div class="game" onclick="openGame('../gamefiles/game/bobtherobber2')">
+        <img src="game/logos/bob the robber 2.jpeg"  class="game-logo">
+        <h3 class="game-name">Bob the Robber 2</h3>
+      </div>
+      <div class="game" onclick="openGame('../gamefiles/game/boxhead2play/')">
+        <img src="game/logos/boxhead.jpg"  class="game-logo">
+        <h3 class="game-name">Box Head</h3>
+      </div>
+      <div class="game" onclick="openGame('../gamefiles/game/boxing-random/')">
+        <img src="game/logos/boxingrandom.jpg"  class="game-logo">
+        <h3 class="game-name">Boxing Random</h3>
+      </div>
+      <div class="game" onclick="openGame('../gamefiles/game/breakingthebank/')">
+        <img src="game/logos/breakingthebank.png"  class="game-logo">
+        <h3 class="game-name">Breaking the Bank</h3>
+      </div>
+      <div class="game" onclick="openGame('../gamefiles/game/burger-and-frights/')">
+        <img src="game/logos/burgerandfrights.png"  class="game-logo">
+        <h3 class="game-name">Burger and Frights</h3>
+      </div>
+      <div class="game" onclick="openGame('../gamefiles/game/csgo-clicker/')">
+        <img src="game/logos/CSGo Clicker.png"  class="game-logo">
+        <h3 class="game-name">CS:GO Clicker</h3>
+      </div>
+      <div class="game" onclick="openGame('../gamefiles/game/cannon-basketball-4/')">
+        <img src="game/logos/Cannon Basketball 4.png"  class="game-logo">
+        <h3 class="game-name">Cannon Basketball 4</h3>
+      </div>
+      <div class="game" onclick="openGame('../gamefiles/game/anyondefense/')">
+        <img src="game/logos/Canyon Defense.png"  class="game-logo">
+        <h3 class="game-name">Canyon Defense</h3>
+      </div>
+      <div class="game" onclick="openGame('../gamefiles/game/cars-simulator/')">
+        <img src="game/logos/Cars Simulator.png"  class="game-logo">
+        <h3 class="game-name">Cars Simulator</h3>
+      </div>
+      <div class="game" onclick="openGame('../gamefiles/game/cell-machine/')">
+        <img src="game/logos/Cell Machine.png"  class="game-logo">
+        <h3 class="game-name">Cell Machine</h3>
+      </div>
+      <div class="game" onclick="openGame('../gamefiles/game/championarcher/')">
+        <img src="game/logos/Champion Archer.png"  class="game-logo">
+        <h3 class="game-name">Champion Archer</h3>
+      </div>
+      <div class="game" onclick="openGame('../gamefiles/game/champion-island/')">
+        <img src="game/logos/championislnad.png"  class="game-logo">
+        <h3 class="game-name">Champion Island</h3>
+      </div>
+      <div class="game" onclick="openGame('../gamefiles/game/chill-radio/')">
+        <img src="game/logos/chillradio.png"  class="game-logo">
+        <h3 class="game-name">Chill Radio</h3>
+      </div>
+      <div class="game" onclick="openGame('../gamefiles/game/chrome-dino/')">
+        <img src="game/logos/chromedino.png"  class="game-logo">
+        <h3 class="game-name">Chrome Dino</h3>
+      </div>
+      <div class="game" onclick="openGame('../gamefiles/game/cluster-rush/')">
+        <img src="game/logos/clusterrush.png"  class="game-logo">
+        <h3 class="game-name">Cluster Rush</h3>
+      </div>
+      <div class="game" onclick="openGame('../gamefiles/game/connect3/')">
+        <img src="game/logos/connect3.png"  class="game-logo">
+        <h3 class="game-name">Connect 3</h3>
+      </div>
+      <div class="game" onclick="openGame('../gamefiles/game/cookie-clicker/')">
+        <img src="game/logos/cookieclicker.png"  class="game-logo">
+        <h3 class="game-name">Cookie Clicker</h3>
+      </div>
+      <div class="game" onclick="openGame('../gamefiles/game/core-ball/')">
+        <img src="game/logos/coreball.png"  class="game-logo">
+        <h3 class="game-name">Core Ball</h3>
+      </div>
+      <div class="game" onclick="openGame('../gamefiles/game/craftmine/')">
+        <img src="game/logos/craftmine.png"  class="game-logo">
+        <h3 class="game-name">Craftmine</h3>
+      </div>
+      <div class="game" onclick="openGame('../gamefiles/game/creativekillchamber/')">
+        <img src="game/logos/creativekillchamber.jpg"  class="game-logo">
+        <h3 class="game-name">Creative Kill Chamber</h3>
+      </div>
+      <div class="game" onclick="openGame('../gamefiles/game/crossyroad/')">
+        <img src="game/logos/crossyroad.png"  class="game-logo">
+        <h3 class="game-name">Crossy Road</h3>
+      </div>
+      <div class="game" onclick="openGame('../gamefiles/game/cubefield/')">
+        <img src="game/logos/cubefield.png"  class="game-logo">
+        <h3 class="game-name">Cubefield</h3>
+      </div>
+      <div class="game" onclick="openGame('../gamefiles/game/cupcake2048/')">
+        <img src="game/logos/Cupcake 2048.png"  class="game-logo">
+        <h3 class="game-name">Cupcake 2048</h3>
+      </div>
+      <div class="game" onclick="openGame('../gamefiles/game/ctr/')">
+        <img src="game/logos/Cut the rope.png"  class="game-logo">
+        <h3 class="game-name">Cut the Rope</h3>
+      </div>
+      <div class="game" onclick="openGame('../gamefiles/game/ctr-holiday/')">
+        <img src="game/logos/Cut the rope holiday.webp"  class="game-logo">
+        <h3 class="game-name">Cut the Rope Holiday</h3>
+      </div>
+      <div class="game" onclick="openGame('../gamefiles/game/ctr-tr/')">
+        <img src="game/logos/Cut the rope Time Travel.png"  class="game-logo">
+        <h3 class="game-name">Cut the Rope Time Travel </h3>
+      </div>
+      <div class="game" onclick="openGame('../gamefiles/game/dante/')">
+        <img src="game/logos/Dante.png"  class="game-logo">
+        <h3 class="game-name">Dante</h3>
+      </div>
+      <div class="game" onclick="openGame('../gamefiles/game/deal-or-no-deal/')">
+        <img src="game/logos/dealornodeal.jpg"  class="game-logo">
+        <h3 class="game-name">Deal or No Deal</h3>
+      </div>
+      <div class="game" onclick="openGame('../gamefiles/game/death-run-3d/')">
+        <img src="game/logos/deathrun3d.png"  class="game-logo">
+        <h3 class="game-name">Death Run 3D</h3>
+      </div>
+      <div class="game" onclick="openGame('../gamefiles/game/deepest-sword/')">
+        <img src="game/logos/deepestsword.jpg"  class="game-logo">
+        <h3 class="game-name">Deepest Swords</h3>
+      </div>
+      <div class="game" onclick="openGame('../gamefiles/game/defend-the-tank/')">
+        <img src="game/logos/defendthetank.jpg"  class="game-logo">
+        <h3 class="game-name">Defend the Tank</h3>
+      </div>
+      <div class="game" onclick="openGame('../gamefiles/game/doctor-acorn2/')">
+        <img src="game/logos/doctoracorn2.jpg"  class="game-logo">
+        <h3 class="game-name">Doctor Acorn 2</h3>
+      </div>
+      <div class="game" onclick="openGame('../gamefiles/game/doge2048/')">
+        <img src="game/logos/doge2048.png"  class="game-logo">
+        <h3 class="game-name">Doge 2048</h3>
+      </div>
+      <div class="game" onclick="openGame('../gamefiles/game/DogeMiner/')">
+        <img src="game/logos/dogeminer.png"  class="game-logo">
+        <h3 class="game-name">Doge Miner</h3>
+      </div>
+      <div class="game" onclick="openGame('../gamefiles/game/Dogeminer2/')">
+        <img src="game/logos/dogeminer2.jpg"  class="game-logo">
+        <h3 class="game-name">Doge Miner 2</h3>
+      </div>
+      <div class="game" onclick="openGame('../gamefiles/game/doodle-jump/')">
+        <img src="game/logos/doodlejump.png"  class="game-logo">
+        <h3 class="game-name">Doodle Jump</h3>
+      </div>
+      <div class="game" onclick="openGame('../gamefiles/game/doublewires/')">
+        <img src="game/logos/doublewires.png" class="game-logo">
+        <h3 class="game-name">Double Wires</h3>
+      </div>
+      <div class="game" onclick="openGame('../gamefiles/game/dragon-vs-bricks/')">
+        <img src="game/logos/dragonsvsbricks.jpg"  class="game-logo">
+        <h3 class="game-name">Dragons vs Bricks</h3>
+      </div>
+      <div class="game" onclick="openGame('../gamefiles/game/draw-the-hill/')">
+        <img src="game/logos/drawthehill.png"  class="game-logo">
+        <h3 class="game-name">Draw the Hill</h3>
+      </div>
+      <div class="game" onclick="openGame('../gamefiles/game/drift-hunters/')">
+        <img src="game/logos/drifthunters.png"  class="game-logo">
+        <h3 class="game-name">Drift Hunters</h3>
+      </div>
+      <div class="game" onclick="openGame('../gamefiles/game/drive-mad/')">
+        <img src="game/logos/drivemad.jpg"  class="game-logo">
+        <h3 class="game-name">Drive Mad</h3>
+      </div>
+      <div class="game" onclick="openGame('../gamefiles/game/ducklife1/')">
+        <img src="game/logos/ducklife.png"  class="game-logo">
+        <h3 class="game-name">Ducklife</h3>
+      </div>
+      <div class="game" onclick="openGame('../gamefiles/game/ducklife2/')">
+        <img src="game/logos/ducklife2.png"  class="game-logo">
+        <h3 class="game-name">Ducklife 2</h3>
+      </div>
+      <div class="game" onclick="openGame('../gamefiles/game/ducklife3/')">
+        <img src="game/logos/ducklife3.png"  class="game-logo">
+        <h3 class="game-name">Ducklife 3</h3>
+      </div>
+      <div class="game" onclick="openGame('../gamefiles/game/ducklife4/')">
+        <img src="game/logos/ducklife4.jpg"  class="game-logo">
+        <h3 class="game-name">Ducklife 4</h3>
+      </div>
+      <div class="game" onclick="openGame('../gamefiles/game/duke-nukem-2/')">
+        <img src="game/logos/dukenukem2.jpg"  class="game-logo">
+        <h3 class="game-name">Duke Nukem 2</h3>
+      </div>
+      <div class="game" onclick="openGame('../gamefiles/game/minecraft-15/')">
+        <img src="game/logos/eaglercraft15.jpeg"  class="game-logo">
+        <h3 class="game-name">Eaglercraft 1.5</h3>
+      </div>
+      <div class="game" onclick="openGame('../gamefiles/game/minecraft-18/')">
+        <img src="game/logos/eaglercraft18.png"  class="game-logo">
+        <h3 class="game-name">Eaglercraft 1.8</h3>
+      </div>
+      <div class="game" onclick="openGame('../gamefiles/game/edge-surf/')">
+        <img src="game/logos/edgeletssurf.png"  class="game-logo">
+        <h3 class="game-name">Edge Let's Surf</h3>
+      </div>
+      <div class="game" onclick="openGame('../gamefiles/game/edgenotfound/')">
+        <img src="game/logos/edgenotfound.png"  class="game-logo">
+        <h3 class="game-name">Edge Not Found</h3>
+      </div>
+      <div class="game" onclick="openGame('../gamefiles/game/eel-slap/')">
+        <img src="game/logos/eelslap.png"  class="game-logo">
+        <h3 class="game-name">Eel Slap</h3>
+      </div>
+      <div class="game" onclick="openGame('../gamefiles/game/elasticman/')">
+        <img src="game/logos/elasticman.jpg"  class="game-logo">
+        <h3 class="game-name">Elastic Man</h3>
+      </div>
+      <div class="game" onclick="openGame('../gamefiles/game/endlesswar3/')">
+        <img src="game/logos/endlesswar3.png"  class="game-logo">
+        <h3 class="game-name">Endless War 3</h3>
+      </div>
+      <div class="game" onclick="openGame('../gamefiles/game/escapingtheprison/')">
+        <img src="game/logos/escapingtheprison.jpg"  class="game-logo">
+        <h3 class="game-name">Escaping the Prison</h3>
+      </div>
+      <div class="game" onclick="openGame('../gamefiles/game/evil-glitch/')">
+        <img src="game/logos/eviglitch.png"  class="game-logo">
+        <h3 class="game-name">Evil Glitch</h3>
+      </div>
+      <div class="game" onclick="openGame('../gamefiles/game/evolution/')">
+        <img src="game/logos/evolution.png"  class="game-logo">
+        <h3 class="game-name">Evolution</h3>
+      </div>
+      <div class="game" onclick="openGame('../gamefiles/game/exo/')">
+        <img src="game/logos/exo.jpg"  class="game-logo">
+        <h3 class="game-name">Exo</h3>
+      </div>
+      <div class="game" onclick="openGame('../gamefiles/game/factoryballs/')">
+        <img src="game/logos/factoryballs.png"  class="game-logo">
+        <h3 class="game-name">Factory Balls Forever</h3>
+      </div>
+      <div class="game" onclick="openGame('../gamefiles/game/fairsquares/')">
+        <img src="game/logos/fairsquares.png"  class="game-logo">
+        <h3 class="game-name">Fair Squares</h3>
+        </div>
+         <div class="game" onclick="openGame('../gamefiles/game/fake-virus/')">
+        <img src="game/logos/fake-virus.png"  class="game-logo">
+        <h3 class="game-name">Fake Virus</h3>
+           </div>
+           <div class="game" onclick="openGame('../gamefiles/game/fancypantsadventures/')">
+        <img src="game/logos/fancypantsadventures.png"  class="game-logo">
+        <h3 class="game-name">Fancy Pants Adventures</h3>
+             </div>
+             <div class="game" onclick="openGame('../gamefiles/game/fantasy-dash/')">
+        <img src="game/logos/fantasy.png"  class="game-logo">
+        <h3 class="game-name">Fantasy Dash</h3>
+               </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="credit-line">
+    <span class="credit-text" onclick="alert('Thanks to 3kh0 for providing all of these game')">Credit to 3kh0</span>
+  </div>
+  <script src="game/script.js"></script>
+</body>
+</html>
+
+
+<script src="setting/js/index.js"></script>
+<script src="setting/js/settings.js"></script>
+<script src="setting/js/panic.js"></script>
+
+<div id="iframe-modal" class="modal-overlay">
+  <div class="modal-content">
+    <h2>Flame Network Warning</h2>
+    <p>This site is being embedded in another website.</p>
+    <p>Please visit the official Flame Network website. <br> Or you could choose to stay here, by clicking the button.</p>
+    <button id="redirect-button" onclick="hideModal()" class="redirect-button">Continue</button>
+  </div>
+</div>
+<script src="iframe.js"></script>
+
+<script>
+  // Function to handle keydown event and trigger redirection
+document.addEventListener("keydown", function(event) {
+  var panicKey = localStorage.getItem("panicKey");
+  var panicWebsite = localStorage.getItem("panicWebsite");
+
+  if (event.key === (panicKey || "]")) {
+    var website = (panicWebsite || "https://classroom.google.com").toLowerCase();
+
+    // Check if "http://" or "https://" is missing and add it
+    if (!website.startsWith("http://") && !website.startsWith("https://")) {
+      website = "http://" + website;
+    }
+
+    window.location.href = website;
+  }
+});
+</script>
